@@ -1,0 +1,26 @@
+#WINDOWS CMD
+
+
+set key value [EX(ex) #生命期间 秒(无参数则不过期)]，value中间有空格的话，用引号包裹
+expire key seconds   #额外设置过期时间
+
+exmple:
+set name 'welsi liang'
+set age 20
+expire age 30    
+set age 20 ex 20 #添加键值对，同时设置过期
+ttl age   #查询过期时间
+
+
+get命令，查找key value对
+get key
+
+
+del命令，删除key value对
+del key
+
+keys *命令，查看Redis中所有key
+
+
+
+

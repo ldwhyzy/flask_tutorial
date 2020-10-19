@@ -1,0 +1,65 @@
+WINDOWS CMD管理员模式，否则无法运行
+
+### memcached
+#### 安装 
+在管理员模式的CMD下执行memcached.exe -d install 否则
+failed to install service or service already installed
+
+
+memcached.exe -d install 安装服务
+memcached.exe -d start  开启服务
+memcached.exe -d stop  关闭服务
+
+连接memcached服务
+telnet客户端开启
+开始 -> 控制面板 -> 程序 -> 打开或关闭windows功能 -> telnet客户端
+
+连接，本机默认11211端口
+telnet 127.0.0.1 11211
+
+set命令，添加key value对，会覆盖同名key
+set key [是否压缩 0] [生命期间 秒(0 不过期)] [字节长度]
+value
+
+exmple:
+set name 0 120 6 
+momoka
+
+add命令，添加key value对，不覆盖同名key
+add key [是否压缩 0] [生命期间 秒] [字节长度]
+value
+
+get命令，查找key value对
+get key
+
+incr命令，加，必须为数字
+incr key step
+
+exmple:
+set age 0 0 2
+18
+incr age 2
+20
+
+decr命令，加，必须为数字
+decr key step
+
+exmple:
+set age 0 0 2
+18
+decr age 2
+16
+
+
+
+delete命令，删除key value对
+delete key
+
+flush_all命令，删除所有key value对
+flush_all
+
+stats命令,查看memcached服务运行状况(连接数，查询，运行次数等)
+
+
+
+

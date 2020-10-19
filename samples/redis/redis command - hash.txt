@@ -1,0 +1,40 @@
+#WINDOWS CMD
+
+#hash
+
+hset命令，设置 key 指定的哈希集中指定字段的值。(在key哈希集中插入值)
+HSET key field value
+example:
+hset person name lilei
+
+
+HMSET命令，设置 key 指定的哈希集中指定字段的值。(在key哈希集中插入值)
+HMSET key field value [field value ...]
+example:
+hmset person name lilei age 18 gend male
+
+
+HGET命令，返回 key 指定的哈希集中该字段所关联的值
+hget key field
+example:
+hget person name
+
+
+hgetall,返回 key 指定的哈希集中所有的字段和值。
+HGETALL key
+
+
+HKEYS命令，返回 key 指定的哈希集中所有字段的名字
+HKEYS key
+
+
+HLEN key,返回 key 指定的哈希集包含的字段的数量。
+
+
+HVALS key,返回 key 指定的哈希集中所有字段的值。
+
+
+
+
+
+

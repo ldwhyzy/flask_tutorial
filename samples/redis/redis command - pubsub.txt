@@ -1,0 +1,17 @@
+#WINDOWS CMD
+
+#publish subscribe
+
+PUBLISH channel message,将信息 message 发送到指定的频道 channel。返回值是收到消息的客户端数量。
+example:
+publish chatroom 'welcome aogeaoeao'
+
+
+SUBSCRIBE channel [channel ...]订阅给指定频道的信息。
+example:
+subscribe chatroom
+
+
+PUBSUB CHANNELS [pattern]列出当前active channels.活跃是指信道含有一个或多个订阅者
+
+

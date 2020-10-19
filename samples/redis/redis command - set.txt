@@ -1,0 +1,46 @@
+#WINDOWS CMD
+
+
+
+sadd命令，插入元素
+sadd key member [member...]
+sadd tv cctv hbtv
+
+
+smembers命令，返回所有元素
+smembers key
+
+
+scard命令，返回元素个数
+scard key
+
+
+sdiff命令，返回集合的差集
+sdiff key1 key2 # 在key1不在key2
+sdiff key2 key1 # 在key2不在key1
+
+
+sinter命令，返回交集
+sinter key1 [key2 key3...]
+
+
+sismember命令，元素是否在集合中
+sismember key member
+
+
+srem删除指定元素
+SREM key member [member ...]
+
+
+spop从存储在key的集合中移除并返回一个或多个随机元素
+SPOP key [count]
+
+
+SRANDMEMBER key [count]仅提供key参数时，该命令作用类似于SPOP命令，
+不同的是SPOP命令会将被选择的随机元素从集合中移除，而SRANDMEMBER仅仅是返回该随记元素，而不做任何操作.
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+#WINDOWS CMD
+
+
+
+lpush命令，左插入元素
+lpush key value
+
+
+rpush命令，右插入元素
+rpush key value
+
+
+linsert key before|after pivot value在pivot值前后插入value
+
+
+lindex key index,按index查询元素
+
+
+lpop key命令，左弹出一个元素
+rpop key命令，右弹出一个元素
+
+llen key列队长度
+
+lrange列举list中元素
+lrange key start stop
+lrange list_name 0 -1 #列举整个list
+
+lset key index value设置list中的一个元素
+
+
+lrem key count value
+从存于 key 的列表里移除前 count 次出现的值为 value 的元素。 这个 count 参数通过下面几种方式影响这个操作：
+count > 0: 从头往尾移除值为 value 的元素。
+count < 0: 从尾往头移除值为 value 的元素。
+count = 0: 移除所有值为 value 的元素。
+
+
+
+
+
+

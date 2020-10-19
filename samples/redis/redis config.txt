@@ -1,0 +1,22 @@
+#WINDOWS CMD
+
+#redis-cli打开Redis客户端，默认地址127.0.0.1，端口6739
+redis-cli [-h 127.0.0.1] [-p 6739]
+
+密码设置:
+redis.windows.conf文件中
+设置requirepass参数值
+# requirepass foobared
+#requirepass 123456
+
+打开客户端后，使用命令auth
+auth xxxxxxxx  #xxxxx替换为password
+
+
+局域网中连接到Redis
+redis.windows.conf文件中设置bind参数，使用运行Redis的IP地址，否则是默认，只能本机访问
+# bind 192.168.1.100 10.0.0.1
+# bind 127.0.0.1
+
+
+

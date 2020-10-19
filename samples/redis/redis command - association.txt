@@ -1,0 +1,28 @@
+#WINDOWS CMD
+
+#associationm
+
+multi命令，标记一个事务块的开始。 随后的指令将在执行EXEC时作为一个原子执行。
+exec,执行事务中所有在排队等待的指令并将链接状态恢复到正常,当使用WATCH 时，只有当被监视的键没有被修改，且允许检查设定机制时，EXEC会被执行
+
+example:
+multi
+set key value
+exec
+
+discard命令，刷新一个事务中所有在排队等待的指令，并且将连接状态恢复到正常。如果已使用WATCH，DISCARD将释放所有被WATCH的key。
+
+example:
+multi
+set key value
+discard
+
+
+
+watch,标记所有指定的key 被监视起来，在事务中有条件的执行（乐观锁）。只有事务块中被监视的键没有被修改，且允许检查设定机制时，EXEC会被执行
+
+
+
+unwatch,刷新一个事务中已被监视的所有key。如果执行EXEC 或者DISCARD， 则不需要手动执行UNWATCH 。
+
+

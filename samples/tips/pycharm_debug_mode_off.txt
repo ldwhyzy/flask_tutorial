@@ -1,0 +1,1 @@
+pycharm 设置edit configurations，勾选debug，在config.py中设置无效

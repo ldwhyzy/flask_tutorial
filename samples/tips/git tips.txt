@@ -1,0 +1,5 @@
+ git init
+ git add .
+ git commit -m 'first_versio'
+ git remote add origin https://github.com/ldwhyzy/flask_tutorial.git  #添加远程仓库
+ git push origin master

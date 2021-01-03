@@ -1,0 +1,4 @@
+    with open(filename, 'r', encoding='utf-8') as f:
+        # print(f.read())	 #f.read()改变了f游标(到结尾)，导致json.load(f)时f已经为空，报错
+        # f.seek(0)		#f.read()后必须调用
+        jsObj = json.load(f)

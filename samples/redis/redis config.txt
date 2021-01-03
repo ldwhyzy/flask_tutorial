@@ -20,3 +20,4 @@ redis.windows.conf文件中设置bind参数，使用运行Redis的IP地址，否
 
 
 
+2200

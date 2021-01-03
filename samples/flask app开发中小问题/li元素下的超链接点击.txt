@@ -1,0 +1,6 @@
+<li id="test-li"><a href="/cms/board/">这是超链接</a></li>
+
+<script>
+$("#test-li").click();  //并不会产生/cms/board/的网页请求，而跳转。但是鼠标点击到li元素上回产生跳转。
+$("#test-li>a").click();  //会正常跳转。
+</script>

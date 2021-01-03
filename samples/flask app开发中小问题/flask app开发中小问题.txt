@@ -1,0 +1,14 @@
+hashlib.md5()
+
+注册功能需要token吗？
+generate_password_hash():密码salt，格式记录在数据库中，泄露和明文有什么区别？
+
+sqlalchemy 增删改查的使用不够熟练
+Model.query下的方法来操作
+
+
+前端加载JS文件，即使浏览器勾选disable cache依然会不更新，需要打开application里的JS文件，刷新，以更新。
+
+
+视图函数里很多是取数据库列的ID，但不检测ID类型，如果不是整形，绝对要报错，要怎么处理？
+有专门的500报错处理吗？？？
